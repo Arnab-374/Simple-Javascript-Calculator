@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title></title>
+  </head>
+  <body>
+    <!--Heading-->
+    <h1 class = "heading">Javascript Calculator</h1>
+
+    <!--Display-->
+    <div class="row">
+      <input class="display" type="text" name = "" placeholder = "" value = "">
+    </div>
+
+    <!--Keys-->
+    <div class="row keys">
+      <tr>
+        <td><input class="button" type="button" onclick="addToScreen('7')" value="7"></td>
+        <td><input class="button" type="button" onclick="addToScreen('8')" value="8"></td>
+        <td><input class="button" type="button" onclick="addToScreen('9')" value="9"></td>
+        <td><input class="button divide" type="button" onclick="addToScreen('/')" value="/"></td>
+      </tr>
+    </div>
+    <div class="row keys">
+      <tr>
+        <td> <input class="button" type="button" onclick="addToScreen('4')" value="4"> </td>
+        <td> <input class="button" type="button" onclick="addToScreen('5')" value="5"> </td>
+        <td> <input class="button" type="button" onclick="addToScreen('6')" value="6"> </td>
+        <td> <input class="button multiply" type="button" onclick="addToScreen('*')" value="x"> </td>
+      </tr>
+    </div>
+    <div class="row keys">
+      <tr>
+        <td> <input class="button" type="button" onclick="addToScreen('1')" value="1"> </td>
+        <td> <input class="button" type="button" onclick="addToScreen('2')" value="2"> </td>
+        <td> <input class="button" type="button" onclick="addToScreen('3')" value="3"> </td>
+        <td> <input class="button addition" type="button" onclick="addToScreen('+')" value="+"> </td>
+      </tr>
+    </div>
+    <div class="row keys">
+      <tr>
+        <td> <input class="button" type="button" onclick="addToScreen('.')" value="."> </td>
+        <td> <input class="button" type="button" onclick="addToScreen('0')" value="0"> </td>
+        <td> <input class="button substraction" type="button" onclick="addToScreen('-')" value="-"> </td>
+        <td> <input class="button equals" type="button" onclick="answer()" value="="> </td>
+      </tr>
+    </div>
+    <div class="row keys">
+      <tr>
+        <td> <input class="button delete" type="button" onclick="backspace()" value="DEL"> </td>
+        <td> <input class="button clear" type="button" onclick="addToScreen('c')" value="C"> </td>
+        <td> <input class="button clear" type="button" onclick="power(3)" value="x^3"> </td>
+      </tr>
+    </div>
+  </body>
+
+  <script src = "app.js"></script>
+</html>
